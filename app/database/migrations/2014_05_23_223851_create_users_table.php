@@ -15,6 +15,7 @@ class CreateUsersTable extends Migration {
         Schema::create('users', function($table)
         {
             $table->increments('id');
+            $table->string('uid')->unique();
             $table->string('username')->unique();
             $table->string('password');
             $table->string('name');

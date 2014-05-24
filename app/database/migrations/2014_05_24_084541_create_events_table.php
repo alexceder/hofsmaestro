@@ -15,6 +15,7 @@ class CreateEventsTable extends Migration {
         Schema::create('events', function($table) {
             $table->increments('id');
             $table->string('name');
+            $table->integer('host');
             $table->text('description');
             $table->integer('num_people');
             $table->string('location');

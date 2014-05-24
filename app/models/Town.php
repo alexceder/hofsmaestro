@@ -1,6 +1,6 @@
 <?php
 
-class Town {
+class Town extends Eloquent {
 
     public $timestamps = false;
 

@@ -1,6 +1,6 @@
 <?php
 
-class Event {
+class Event extends Eloquent {
 
     public function town()
     {
