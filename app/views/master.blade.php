@@ -8,10 +8,10 @@
 </head>
 
 <body>
-	@yield('content')
-	
-	<div class="welcome">
-		<h1>You have arrived.</h1>
+	@include('navbar-content')
+	<div class="main-content">
+		@yield('main-content')
 	</div>
+
 </body>
 </html>
