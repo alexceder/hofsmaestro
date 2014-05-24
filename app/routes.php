@@ -16,13 +16,3 @@ Route::get('/', function()
 	return View::make('start');
 });
 
-Route::get('/start', function(){
-	return View::make('start');
-});
-
-
-Route::get('/location/{loc}', function($loc){
-
-});
-
-
