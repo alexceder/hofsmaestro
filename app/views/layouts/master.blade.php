@@ -11,9 +11,7 @@
 
 <body onload="getLocation()">
 	@include('partials.navbar')
-	<div class="main-content">
-		@yield('content')
-	</div>
 
+	@yield('content')
 </body>
 </html>
