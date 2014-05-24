@@ -1,4 +1,5 @@
 <ul>
-	<li><a href="default.asp">Events</a></li>
-	<li><a href="about.asp">Settings</a></li>
+	<li><a href="events">Events</a></li>
+	<li>Gört_Logga</li>
+	<li><a href="settings">Settings</a></li>
 </ul>
