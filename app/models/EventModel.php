@@ -13,5 +13,11 @@ class EventModel extends Eloquent {
     {
         return $this->belongsTo('Type');
     }
+
+    public function getNiceTimeAttribute()
+    {
+        $time = new \Carbon\Carbon($this->time);
+        return $time->format('H:i');
+    }
 }
 
