@@ -1,6 +1,6 @@
 <?php
 
-class Type {
+class Type extends Eloquent {
 
     public $timestamps = false;
 

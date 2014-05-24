@@ -12,7 +12,7 @@ class CreateTownsTable extends Migration {
 	 */
 	public function up()
 	{
-        Schema::create('locations', function($table) {
+        Schema::create('towns', function($table) {
             $table->increments('id');
             $table->string('slug');
             $table->string('name');
@@ -26,7 +26,7 @@ class CreateTownsTable extends Migration {
 	 */
 	public function down()
 	{
-        Schema::drop('locations');
+        Schema::drop('towns');
 	}
 
 }
