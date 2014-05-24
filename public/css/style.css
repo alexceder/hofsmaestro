@@ -4,17 +4,22 @@ body {
 	margin:0;
 	font-family:'Lato', sans-serif;
 	text-align:center;
-	color: #999;
+	color: #fff;
+    background: #ddffdd;
+}
+
+.main-nav {
+    color: #333333;
 }
 
 .main-content {
-	width: 300px;
-	height: 200px;
-	position: absolute;
-	left: 50%;
-	top: 50%;
-	margin-left: -150px;
-	margin-top: -100px;
+    margin: 0 2%;
+    background-color: #ff9999;
+}
+
+.event {
+    background: #9999ff;
+    margin: 1em;
 }
 
 a, a:visited {
@@ -24,4 +29,14 @@ a, a:visited {
 h1 {
 	font-size: 32px;
 	margin: 16px 0 0 0;
+}
+
+ul {
+	list-style-type:none;
+	margin:0;
+	padding:0;
+}
+
+li {
+	display: inline;
 }

@@ -1,4 +1,3 @@
-var x=document.getElementById("showLocation");
 function getLocation(){
   if (navigator.geolocation){
       navigator.geolocation.getCurrentPosition(getPositionSuccess, getPositionError);
@@ -18,10 +17,6 @@ function getPositionSuccess(position){
 
   console.log("Latitude: ", curLat);
   console.log("Longitude: ", curLng);
-  
-
-  x.innerHTML="Latitude: " + position.coords.latitude + 
-  "<br>Longitude: " + position.coords.longitude;
 
   getCity(curLat, curLng);
 }
