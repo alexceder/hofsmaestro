@@ -25,3 +25,13 @@ h1 {
 	font-size: 32px;
 	margin: 16px 0 0 0;
 }
+
+ul {
+	list-style-type:none;
+	margin:0;
+	padding:0;
+}
+
+li {
+	display: inline;
+}
