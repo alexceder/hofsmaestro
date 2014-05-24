@@ -1,6 +1,8 @@
 <?php
 
-class Event extends Eloquent {
+class EventModel extends Eloquent {
+
+    protected $table = 'events';
 
     public function town()
     {

@@ -13,13 +13,21 @@
 
 Route::get('/', function()
 {
-	return View::make('start');
+    $events = EventModel::all();
+    return View::make('start', compact('events'));
 });
 
-Route::get('/start', function(){
-	return View::make('start');
+Route::get('/events', function()
+{
+    $events = EventModel::all();
+    return View::make('start', compact('events'));
 });
 
+Route::get('/events/{id}', function($id)
+{
+    $event = EventModel::find($id);
+    return View::make('event', compact('event'));
+});
 
 Route::get('login', function(){
     $facebook = new Facebook(Config::get('facebook'));
