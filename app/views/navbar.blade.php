@@ -1,4 +1,4 @@
 @extends('master')
-@section('content')
+@section('navbar-content')
 Här kommer logga och config-grejer ligga
 @stop
