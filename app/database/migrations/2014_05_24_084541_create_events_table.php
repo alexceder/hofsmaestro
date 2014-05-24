@@ -18,6 +18,7 @@ class CreateEventsTable extends Migration {
             $table->integer('host');
             $table->text('description');
             $table->integer('num_people');
+            $table->integer('max_num_people');
             $table->string('location');
             $table->integer('town');
             $table->boolean('private');

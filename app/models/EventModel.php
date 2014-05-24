@@ -4,6 +4,8 @@ class EventModel extends Eloquent {
 
     protected $table = 'events';
 
+    protected $guarded = ['id'];
+
     public function town()
     {
         return $this->belongsTo('Location');

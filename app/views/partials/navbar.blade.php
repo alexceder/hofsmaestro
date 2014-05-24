@@ -1,4 +1,4 @@
 <nav class="main-nav">
-    <h1>Gör't</h1>
-    <a class="nav-btn" href="#"></a>
+    <h1><a href="/">Gör't</a></h1>
+    <a class="nav-btn toggle-slide-right" href="#"></a>
 </nav>
