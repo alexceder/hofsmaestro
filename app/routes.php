@@ -23,6 +23,34 @@ Route::get('/events', function()
     return View::make('start', compact('events'));
 });
 
+Route::post('/events', function()
+{
+    $event = EventModel::create(Input::all());
+    return Redirect::to('events/'.$event->id);
+});
+
+Route::get('/settings', function()
+{
+    return View::make('settings');
+});
+
+Route::get('/events/random', function()
+{
+    $event = EventModel::first();
+    return View::make('event', compact('event'));
+});
+
+Route::get('/events/my', function()
+{
+    $events = EventModel::all();
+    return View::make('start', compact('events'));
+});
+
+Route::get('/events/new', function()
+{
+    return View::make('new');
+});
+
 Route::get('/events/{id}', function($id)
 {
     $event = EventModel::find($id);

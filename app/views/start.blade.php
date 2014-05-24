@@ -2,7 +2,7 @@
 
 @section('content')
 
-<a class="btn-big" href="events/new">Skapa event</a>
+<a class="btn-big" href="/events/new">Skapa event</a>
 
 @foreach ($events as $event)
     <div class="event">
